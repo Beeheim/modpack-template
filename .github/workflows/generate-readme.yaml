@@ -1,0 +1,11 @@
+name: Generate README
+
+# Run when a new release is... released
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    name: ""
+    uses: beeheim/actions-workflows/.github/workflows/generate-readme.yaml@generate-readme
+    secrets: inherit
